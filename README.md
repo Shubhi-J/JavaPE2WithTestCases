@@ -3,6 +3,10 @@ It has 10 java programs with test cases
 Github URL:
 https://github.com/Shubhi-J/JavaPE2WithTestCases
 
-In this exercise I understood how to calculate factorial,
-getter setter,calculate min max average, reading file,list files of a folder etc.
+In this exercise I solved problems like:
+1.how to calculate factorial,
+2.generate getter setter,
+3.calculate min max average of given grades,
+4.reading file,
+5.listing files of a folder etc.
 
