@@ -10,13 +10,16 @@ public class ReadFileAndCalcuateFrequency {
     public String CalculateFrequency() throws IOException {
         String keyy="";
         String output="";
+        // give path of file to be read
         Path path = Paths.get("/home/shubhi/Desktop/HelloWorld.txt");
+        // read content of file as byte array
         byte[] data = readAllBytes(path);
         String text = new String(data);
+        // split file on ., ! and new line
         String[] keys = text.split(" |\\.|!|\n+");
         String[] uniqueKeys;
         int count = 0;
-        //System.out.println(text);
+        // find unique keys in file
         uniqueKeys = getUniqueKeys(keys);
 
         for (String key : uniqueKeys) {
@@ -35,7 +38,7 @@ public class ReadFileAndCalcuateFrequency {
         return output.trim();
     }
 
-
+    // method to find unique keys in file
     private static String[] getUniqueKeys(String[] keys)
     {
         String[] uniqueKeys = new String[keys.length];
@@ -53,7 +56,7 @@ public class ReadFileAndCalcuateFrequency {
                     keyAlreadyExists = true;
                 }
             }
-
+            // check if key already exists
             if(!keyAlreadyExists)
             {
                 uniqueKeys[uniqueKeyIndex] = keys[i];

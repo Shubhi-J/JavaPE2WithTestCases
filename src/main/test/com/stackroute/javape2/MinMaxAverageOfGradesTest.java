@@ -9,23 +9,17 @@ public class MinMaxAverageOfGradesTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objMinMaxAverageOfGrades = new MinMaxAverageOfGrades();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objMinMaxAverageOfGrades = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test
@@ -67,7 +61,7 @@ public class MinMaxAverageOfGradesTest {
         //arrange
 
         //act
-        String result=objMinMaxAverageOfGrades.findMinMaxAverageOfGrade(4,new int[] {89,'u',67,87});
+        String result=objMinMaxAverageOfGrades.findMinMaxAverageOfGrade(4,new int[] {89,'s',67,87});
 
         //assert
         assertEquals("the grade should be between 0 and 100",result);

@@ -11,23 +11,17 @@ public class ReadFileAndCalcuateFrequencyTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objReadFileAndCalcuateFrequency = new ReadFileAndCalcuateFrequency();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objReadFileAndCalcuateFrequency = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test

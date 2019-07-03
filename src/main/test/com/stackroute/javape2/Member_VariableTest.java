@@ -9,23 +9,17 @@ public class Member_VariableTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objMember_variable = new Member_Variable();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objMember_variable = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test

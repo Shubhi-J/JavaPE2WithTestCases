@@ -9,23 +9,17 @@ public class ReverseAndPalindromeCheckerTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objReverseAndPalindromeChecker = new ReverseAndPalindromeChecker();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objReverseAndPalindromeChecker = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test

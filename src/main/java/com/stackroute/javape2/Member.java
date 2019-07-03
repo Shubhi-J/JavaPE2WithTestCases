@@ -1,11 +1,12 @@
 package com.stackroute.javape2;
 
 public class Member {
+    // define properties
     private String name;
     private int age;
     private float salary;
 
-    //Setter
+    // generate setter
     public void setName(String name) {
         this.name=name;
     }
@@ -16,7 +17,7 @@ public class Member {
         this.salary=salary;
     }
 
-    //Getter
+    // generate getter
     public String getName() {
         return name;
     }

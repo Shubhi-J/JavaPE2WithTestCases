@@ -10,14 +10,18 @@ public class MinMaxAverageOfGrades {
         float sumOfGrades=0,average=0;
         int min=0,max=0;
         for(int loopIndex=0;loopIndex<grades.length;loopIndex++) {
+            // check if grades are between 0 and 100
             if(grades[loopIndex]>=0 && grades[loopIndex]<=100) {
                if(loopIndex<grades.length-1) {
+                    // find minimum grade
                     if (grades[loopIndex] < grades[loopIndex + 1]) {
                         min = grades[loopIndex];
                     } else {
+                        // find maximum grade
                         max = grades[loopIndex];
                     }
                 }
+               // find sum of grades
             sumOfGrades=sumOfGrades+grades[loopIndex];
 
             } else {
@@ -25,6 +29,7 @@ public class MinMaxAverageOfGrades {
                 return outputMsg;
             }
         }
+        // calculate average of all grades
         average=sumOfGrades/noOfStudent;
         outputMsg="the average is "+average+" the minimum is "+min+" the maximum is "+max;
 

@@ -5,28 +5,6 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class EvenNumTestTest {
-    // EvenNumTest objEvenNumTest;
-
-//    @Before
-//    public void setUp() {
-//        System.out.println("Before");
-//       // objEvenNumTest = new EvenNumTest();
-//    }
-//    @After
-//    public void tearDown () {
-//        System.out.println("After");
-//        // objEvenNumTest = null;
-//    }
-//
-//    @BeforeClass
-//    public static void setUpBeforeClass() {
-//        System.out.println("BeforeClass");
-//    }
-//    @AfterClass
-//    public static void tearDownAfterClass () {
-//        System.out.println("AfterClass");
-//    }
-//
 
     @Test
     public void givenEvenNumberShouldReturnTrue() {

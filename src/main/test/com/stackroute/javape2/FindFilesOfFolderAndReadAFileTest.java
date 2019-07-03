@@ -11,23 +11,17 @@ public class FindFilesOfFolderAndReadAFileTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
         objFindFilesOfFolderAndReadAFile = new FindFilesOfFolderAndReadAFile();
     }
     @After
     public void tearDown () {
-        System.out.println("After");
         objFindFilesOfFolderAndReadAFile = null;
     }
 
     @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass () {
-        System.out.println("AfterClass");
-    }
+    public static void tearDownAfterClass (){}
 
 
     @Test
